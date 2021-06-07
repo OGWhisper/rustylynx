@@ -1,0 +1,106 @@
+<div id="splash">
+    <h1 style="margin-top: 128px;">
+        Rust Reinvisioned.
+    </h1>
+    <h1>
+        &nbsp;
+    </h1>
+</div>
+<div id="servers">
+    <div class="serverSegment" id="left">
+        <div class="server" id="rust-sunset">
+            <div class="serverInner">
+                <h1>RustyLynx.Com - LearnToPlay</h1>
+                <h2>Our Flagship Server. We have taught 4500 Rust Players how to play Rust right here.</h2>
+                <h3>
+                    <span><b>PVP:</b> Discouraged</span>
+                    <span><b>Population:</b> Mid</span>
+                    <span><b>Modifier:</b> 1x</span>
+                    <span><b>Enviroment:</b> Easy</span>
+                    <span><b>Playstyle:</b> Friendly</span>
+                    <span><b>IP:</b> 45.92.36.75:28015</span>
+                </h3>
+            </div>
+        </div>
+        <div class="server" id="horse-sunset">
+            <div class="serverInner">
+                <h1>RustyLynx.Com - PVE</h1>
+                <h2>Heavily Modded, No PVP. Work together to survive the very challenging wilderness.</h2>
+                <h3>
+                    <span><b>PVP:</b> Disabled</span>
+                    <span><b>Population:</b> High</span>
+                    <span><b>Modifier:</b> 5x</span>
+                    <span><b>Enviroment:</b> Punishing</span>
+                    <span><b>Playstyle:</b> High Intensity</span>
+                    <span><b>IP:</b> 82.22.240.230:20000</span>
+                </h3>
+            </div>
+        </div>
+        <div class="server" id="airdrop-sunset">
+            <div class="serverInner">
+                <h1>RustyLynx.Com - Combat Arenas</h1>
+                <h2>Down For Maintenence</h2>
+            </div>
+        </div>
+    </div>
+    <div class="serverSegment">
+        <div class="server" id="forest">
+            <div class="serverInner">
+                <h1>RustyLynx.Com - 2X</h1>
+                <h2>Lightly modded, laid back and low pop. The perfect enviroment for a relaxing evening.</h2>
+                <h3>
+                    <span><b>PVP:</b> Enabled</span>
+                    <span><b>Population:</b> Low</span>
+                    <span><b>Modifier:</b> 2x</span>
+                    <span><b>Enviroment:</b> Easy</span>
+                    <span><b>Playstyle:</b> Low Intensity</span>
+                    <span><b>IP:</b> 82.22.240.230:20010</span>
+                </h3>
+            </div>
+        </div>
+        <div class="server" id="heli-over-dome">
+            <div class="serverInner">
+                <h1>RustyLynx.Com - 5X</h1>
+                <h2>The perfect blend of PvP and PvE. Players and the enviroment are equal threats.</h2>
+                <h3>
+                    <span><b>PVP:</b> Enabled</span>
+                    <span><b>Population:</b> Mid</span>
+                    <span><b>Modifier:</b> 5x</span>
+                    <span><b>Enviroment:</b> Rewarding</span>
+                    <span><b>Playstyle:</b> Moderate Intensity</span>
+                    <span><b>IP:</b> 45.92.36.75:28015</span>
+                </h3>
+            </div>
+        </div>
+        <div class="server" id="forest-pylon">
+            <div class="serverInner">
+                <h1>RustyLynx.Com - Battlefield</h1>
+                <h2>Work in Progress.</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 class="segHeader">Our Fleet</h1>
+<div id="hardware">
+    <div class="hardware" *ngFor="let h of hardware">
+        <div style="width: 200px;">
+            <b>Name:</b>
+            <b>Threads:</b>
+            <b>Clock Speed:</b>
+            <b>Ram:</b>
+            <b>Operational:</b>
+        </div>
+        <div>
+            <h3>{{h.Name}}</h3>
+            <h3>{{h.Threads}}</h3>
+            <h3>{{h.Clock}}</h3>
+            <h3>{{h.Ram}}</h3>
+            <h3 *ngIf="h.Operational" style="color: #0f0;">True</h3>
+            <h3 *ngIf="!h.Operational" style="color: #f00;">False</h3>
+        </div>
+    </div>
+</div>
+<div id="segs">
+    <app-part1></app-part1>
+    <app-part2></app-part2>
+</div>

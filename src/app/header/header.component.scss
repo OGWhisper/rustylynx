@@ -1,0 +1,65 @@
+#wrapper {
+    width: calc(75vw - 24px);
+    padding: 24px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    animation: 2s ease-in-out fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#title {
+    // width: 48px;
+    // height: 48px;
+    // background-image: url("./icon.png");
+    // background-size: 80px 80px;
+    // background-position: center center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#pages {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    margin-left: 32px;
+}
+
+#pages > button {
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    border: none;
+    color: #999;
+    padding: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+#pages > button:hover {
+    color: #fff;
+}

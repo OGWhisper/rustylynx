@@ -1,0 +1,39 @@
+#wrapper {
+    width: calc(100vw - 64px);
+    padding: 32px;
+    background-color: #222;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+
+#wrapper h1 {
+    font-weight: 1000 !important;
+}
+
+#inner {
+    width: max-content;
+
+    display: flex;
+    justify-content: space-between;
+    justify-items: space-between;
+}
+
+.seg {
+    width: 500px;
+}
+
+.seg h2 {
+    font-weight: 1000;
+}
+
+.seg p {
+    font-weight: 1000;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #inner {
+        display: block !important;
+    }
+}

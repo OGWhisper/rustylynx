@@ -1,0 +1,56 @@
+#wrapper {
+    width: 50vw;
+    padding-top: 0px;
+    padding-bottom: 128px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    justify-items: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#text {
+    width: 400px;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: left;
+    color: #ddd;
+}
+
+#text > h1 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#text > p {
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 20px;
+
+    color: #888;
+}
+
+#text > p > span {
+    font-weight: 500;
+    color: #fff !important;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #wrapper {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+    
+    #sceneB {
+        display: none !important;
+    }
+
+    #text {
+        width: calc(100vw - 32px) !important;
+    }
+}
